@@ -1,0 +1,12 @@
+[Unit]
+Description=MoOde Relay Toggle Daemon
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/home/pi
+ExecStart=python relaytoggle.py
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
