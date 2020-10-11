@@ -1,4 +1,4 @@
-Change the relay pin to the GPIO pin for you relay.
+Change the relay pin to the GPIO pin for your relay.
 Save the contents of relaytoggle.py script to /home/pi/relaytoggle.py
 Save the contents of relaytoggle.service script to /lib/systemd/system/relaytoggle.service
 Run the following commands
