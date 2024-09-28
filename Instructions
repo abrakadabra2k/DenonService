@@ -8,3 +8,4 @@ Run the following commands
     
 Denon's telnet descpription: https://assets.denon.com/documentmaster/uk/avr1713_avr1613_protocol_v860.pdf
 Tested on an AVR-X1600H with Moode 8.3.9
+SetDenonAux1.sh can be used for testing the Telnet connection, but is actually not needed
