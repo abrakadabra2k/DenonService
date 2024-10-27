@@ -29,7 +29,8 @@ def isRunningLocal():
 	return "RUNNING" in os.popen('cat /proc/asound/card*/pcm*/sub*/status | grep RUNNING').read().split()
 	
 
-
+#When running in multiRoom mode, the soundcard will always return "RUNNING" as the connection is kept open
+#As a workaround, ask the server if actually sending music
 def isRunning(): 
 	if isRunningLocal():
 		if multiRoomActive:
