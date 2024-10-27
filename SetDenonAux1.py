@@ -5,7 +5,6 @@ import time
 import subprocess
 import requests
 from time import sleep
-from enum import Enum
 
 PLAYING = 1
 OFFLINE = 2
@@ -26,7 +25,7 @@ def isRunningHTTP():
 def isRunningLocal():
 	if debugOutput :
 		print  (os.popen('cat /proc/asound/card*/pcm*/sub*/status | grep RUNNING').read().split()   )
-    #will return True if "Running" is found in any sound card.
+    	#will return True if "Running" is found in any sound card.
 	return "RUNNING" in os.popen('cat /proc/asound/card*/pcm*/sub*/status | grep RUNNING').read().split()
 	
 
