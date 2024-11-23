@@ -68,7 +68,7 @@ while True:
 	
 		if status == True and currentState == OFFLINE :  
 			try:  
-				subprocess.call(['expect', '/home/moode/SetDenonAux1.sh'])
+				subprocess.call(['expect', '/home/moode/DenonService/SetDenonAux1.sh'])
 			except:
 				print("telnet problem") 
 			#workaround for HDMI issue: restart RX client

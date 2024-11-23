@@ -3,7 +3,7 @@ Description=MoOde Denon Channel Setter
 
 [Service]
 Restart=on-failure
-WorkingDirectory=/home/moode
+WorkingDirectory=/home/moode/DenonService
 ExecStart=python SetDenonAux1.py
 ExecReload=/bin/kill -HUP $MAINPID
 KillSignal=SIGINT
